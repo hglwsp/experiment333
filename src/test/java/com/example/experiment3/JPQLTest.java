@@ -55,12 +55,11 @@ public class JPQLTest {
     }
     @Test
     public void addressRepTest() {
-        addressRepository.list("956")
+        addressRepository.list("626")
                 .forEach(a -> {
                     log.debug("{}", a.getId());
                 });
     }
-
     @Test
     public void userAddressRepTest() {
         UserAddress ua = userAddressRepository.find("wsp", "928");

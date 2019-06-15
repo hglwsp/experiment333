@@ -19,7 +19,6 @@ public class Address {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String detail;
-
     public Address(String detail) {
         this.detail = detail;
     }
